@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="calculator">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <script src="main.js"></script>
+    <div class="container">
+        <form>
+            <input type="text" class="input" name="firstnum" id="input" onfocus="setActiveInput(this)">
+            <input type="text" class="input" name="secondnum" id="input2" onfocus="setActiveInput(this)">
+            <button type="button" class="num" id="no1" onclick="getvalue(1)">1</button>
+            <button type="button" class="num" id="no1" onclick="getvalue(2)">2</button>
+            <button type="button" class="num" id="no1" onclick="getvalue(3)">3</button>
+            <button type="button" class="num" id="no1" onclick="getvalue(4)">4</button>
+            <button type="button" class="num" id="no1" onclick="getvalue(5)">5</button>
+            <button type="button" class="num" id="no1" onclick="getvalue(6)">6</button>
+            <button type="button" class="num" id="no1" onclick="getvalue(7)">7</button>
+            <button type="button" class="num" id="no1" onclick="getvalue(8)">8</button>
+            <button type="button" class="num" id="no1" onclick="getvalue(9)">9</button>
+            <button type="button" class="num" id="no1" onclick="getvalue(0)">0</button>
+            <button type="button" class="operation" onclick="add()">+</button>
+            <button type="button" class="operation" onclick="sub()">-</button>
+            <button type="button" class="operation">=</button>
+            <button type="button" class="operation" onclick="mul()">x</button>
+            <button type="button" class="operation" onclick="div()">/</button>
+            <button type="button" class="operation" onclick="clear()">clr</button>
+        </form>
+        <div class="display" id="res">DISPLAY</div>
+    </div>
+    </body>
+</html>
